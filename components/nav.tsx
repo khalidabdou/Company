@@ -15,7 +15,7 @@ export default function Nav() {
           <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
             <div className="flex w-full items-center justify-between md:w-auto">
               <a href="#">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">AgaSof</span>
                 <img
                   alt="Agency"
                   className="h-8 w-auto sm:h-10"
@@ -60,9 +60,10 @@ export default function Nav() {
               <div>
                 <Image
                   className="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src="/favicon.ico"
                   alt=""
-                  layout='fill'
+                  width={30}
+                  height={30}
                 />
               </div>
               <div className="-mr-2">
