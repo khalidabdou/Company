@@ -10,7 +10,7 @@ export default function Footer() {
         <footer className="p-4 bg-white  shadow md:px-6 md:py-8 dark:bg-gray-900">
 
             <div className="sm:flex sm:items-center sm:justify-between">
-                <a href="/" className="flex items-center sm:mb-0">
+                <div  className="flex items-center sm:mb-0">
                     <Image
                         src="/favicon.ico"
                         className=""
@@ -21,7 +21,7 @@ export default function Footer() {
                     <span className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600">
                         {site.title}
                     </span>
-                </a>
+                </div>
 
         
                 <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
