@@ -23,7 +23,7 @@ export default function Contact() {
     };
 
 
-    const submitContact = async (e: React.FormEvent<HTMLFormElement>) => {
+    const submitContact = async () => {
 
         if (name == "" || email == "" || phone == "" || text == "") {
 
@@ -182,7 +182,7 @@ export default function Contact() {
 
             <button
                 type="button"
-                onClick={(e) => submitContact(e)}
+                onClick={(e) => { e.preventDefault; submitContact() }}
                 className="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
             >
                 Send
