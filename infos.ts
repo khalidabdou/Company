@@ -41,7 +41,6 @@ export const projects = [
     imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
     href: '#',
   },
-
   {
     name: 'School Management System',
     description: 'Now you can manage your school, college, or any educational center with us',
