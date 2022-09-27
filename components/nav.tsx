@@ -15,15 +15,18 @@ export default function Nav() {
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
           <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
             <div className="flex w-full items-center justify-between md:w-auto">
-              <Link href="/">
-                <span className="sr-only">AgaSof</span>
-                <img
-                  alt="Agency"
-                  className="h-8 w-auto sm:h-10"
-                  src="/favicon.ico"
+              <Link href={'/'}>
+                <a>
+                  <span className="sr-only">AgaSof</span>
+                  <img
+                    alt="Agency"
+                    className="h-8 w-auto sm:h-10"
+                    src="/favicon.ico"
 
-                />
+                  />
+                </a>
               </Link>
+
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open main menu</span>
@@ -35,7 +38,10 @@ export default function Nav() {
           <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900 ">
-                {item.name}
+                <a>
+                  {item.name}
+                </a>
+
               </Link>
             ))}
 
