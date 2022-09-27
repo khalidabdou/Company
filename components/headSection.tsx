@@ -1,4 +1,5 @@
-
+import Image from "next/image"
+import Link from "next/link"
 import { site } from "../infos"
 
 export default function Header() {
@@ -22,19 +23,20 @@ export default function Header() {
                                 <span className="block text-indigo-600 xl:inline">online business</span>
                             </h1>
                             <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                                DevPro - Web agency 
+                                DevPro - Web agency
                                 Specialized in the development of innovative solutions adapted to your needs.
                                 In particular Android development, web appliction , working in exsiting projects.
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                                <div className="rounded-md shadow">
-                                    <a
-                                        href="/contact"
-                                        className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
-                                    >
-                                    SEND YOUR INQUIRY
-                                    </a>
-                                </div>
+                                <Link href="/contact">
+                                    <div className="inline-flex rounded-md shadow">
+                                        <a
+                                            className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
+                                        >
+                                            SEND YOUR INQUIRY
+                                        </a>
+                                    </div>
+                                </Link>
                                 {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                                     <a
                                         href="#"
@@ -49,10 +51,11 @@ export default function Header() {
                 </div>
             </div>
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img
+                <Image
                     className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
                     src="/agency.jpeg"
                     alt=""
+                    layout="fill"
                 />
             </div>
         </div>

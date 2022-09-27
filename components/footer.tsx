@@ -1,5 +1,6 @@
 
 import { site ,navigation} from "../infos"
+import Image from "next/image"
 
 export default function Footer() {
 
@@ -8,21 +9,20 @@ export default function Footer() {
         <footer className="p-4 bg-white  shadow md:px-6 md:py-8 dark:bg-gray-900">
 
             <div className="sm:flex sm:items-center sm:justify-between">
-                <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
-                    <img
-                        src="https://cdn-icons-png.flaticon.com/512/4997/4997543.png"
-                        className="mr-3 h-8"
+                <a href="/" className="flex items-center sm:mb-0">
+                    <Image
+                        src="/favicon.ico"
+                        className=""
                         alt="Flowbite Logo"
+                        width={50}
+                        height={50}
                     />
                     <span className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600">
                         {site.title}
                     </span>
                 </a>
 
-                {/* <p className="text-gray-400">
-                    Converted Files: 123456
-                    </p> */}
-
+        
                 <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
                     {navigation.map((nav, e) => {
                         return <li key={e}>

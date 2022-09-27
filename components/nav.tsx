@@ -3,6 +3,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 import { navigation} from "../infos"
 export default function Nav() {
@@ -18,7 +19,8 @@ export default function Nav() {
                 <img
                   alt="Agency"
                   className="h-8 w-auto sm:h-10"
-                  src="https://cdn-icons-png.flaticon.com/512/4997/4997543.png"
+                  src="/favicon.ico"
+                  layout='fill'
                 />
               </a>
               <div className="-mr-2 flex items-center md:hidden">
@@ -56,10 +58,11 @@ export default function Nav() {
           <div className=" rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
-                <img
+                <Image
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                   alt=""
+                  layout='fill'
                 />
               </div>
               <div className="-mr-2">

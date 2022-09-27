@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 const teams = [
     {
@@ -11,8 +11,8 @@ const teams = [
     },
     {
         name: "Nait Ougni Mohamed",
-        label: "Designer",
-        img: "https://scontent.frak1-1.fna.fbcdn.net/v/t39.30808-6/272904319_2006132092880987_215475657032410625_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=h2NYOmzBqdMAX_bRVWK&_nc_oc=AQnk1XifEd_sZk1UHqvDmoQVBrAsotWwlzWQxkREi-VMyIR7WnSZFcTKI_Vy3alxvuI&_nc_ht=scontent.frak1-1.fna&oh=00_AT8UnsnT16VjB4HPz9PVjstuSzg1vbtVXAp_DaEzoBpzqw&oe=63372651",
+        label: "Manager",
+        img:"/avatar.png",
         linkding: "",
         github: "",
         facebook: ""
@@ -20,7 +20,7 @@ const teams = [
     {
         name: "Oussma Ettamli",
         label: "Software Developer",
-        img: "https://demos.creative-tim.com/notus-js/assets/img/team-1-800x800.jpg",
+        img: "https://avatars.githubusercontent.com/u/57911825?v=4",
         linkding: "",
         github: "",
         facebook: ""
@@ -28,7 +28,7 @@ const teams = [
     {
         name: "Ayoub Mentag",
         label: "Java Developer",
-        img: "https://demos.creative-tim.com/notus-js/assets/img/team-1-800x800.jpg",
+        img: "https://avatars.githubusercontent.com/u/83886033?v=4",
         linkding: "",
         github: "",
         facebook: ""
@@ -37,7 +37,7 @@ const teams = [
     {
         name: "Mohmed laarj",
         label: "UI / UX Designer",
-        img: "https://demos.creative-tim.com/notus-js/assets/img/team-1-800x800.jpg",
+        img: "/avatar.png",
         linkding: "",
         github: "",
         facebook: ""
@@ -67,6 +67,7 @@ export default function Team() {
                             src={dev.img}
                             className="rounded-full w-32 mb-4 mx-auto ring-2 ring-indigo-600 p-1"
                             alt="Avatar"
+                            
                         />
                         <h5 className="text-xl font-medium leading-tight mb-2">{dev.name}</h5>
                         <p className="text-gray-500">{dev.label}</p>
