@@ -4,8 +4,8 @@ import { DevicePhoneMobileIcon, CodeBracketIcon, CommandLineIcon, CloudIcon } fr
 const features = [
   {
     name: 'MOBILE APPS',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    description:`We are an experienced mobile application development company that offers various apps and 
+    scalable solutions for diverse industry verticals.`,
     icon: DevicePhoneMobileIcon,
   },
   {

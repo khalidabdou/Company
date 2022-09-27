@@ -18,7 +18,7 @@ export default function Footer() {
                         width={50}
                         height={50}
                     />
-                    <span className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600">
+                    <span className="font-extrabold text-transparent text-3xl  bg-clip-text bg-gradient-to-r from-indigo-400 to-indigo-600">
                         {site.title}
                     </span>
                 </div>
