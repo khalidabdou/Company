@@ -85,6 +85,7 @@ export default function Contact() {
 
         {toast}
         <div className="flex flex-wrap justify-center text-center mt-10">
+            
             <div className="w-full lg:w-6/12 px-4">
                 <p className="mt-2 text-3xl font-bold leading-8 text-transparent tracking-tight bg-clip-text   bg-gradient-to-r from-indigo-400 to-indigo-600 sm:text-4xl">
                     Accelerate Your Business Growth!
