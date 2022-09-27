@@ -20,7 +20,7 @@ export default function Nav() {
                   alt="Agency"
                   className="h-8 w-auto sm:h-10"
                   src="/favicon.ico"
-                  layout='fill'
+                  
                 />
               </a>
               <div className="-mr-2 flex items-center md:hidden">
