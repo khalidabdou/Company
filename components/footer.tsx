@@ -27,9 +27,12 @@ export default function Footer() {
                 <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
                     {navigation.map((nav, e) => {
                         return <li key={e}>
-                            <a href={nav.href} className="mr-4 hover:underline md:mr-6 ">
+                            <Link href={nav.href} >
+                             <a  className="mr-4 hover:underline md:mr-6 ">
                                 {nav.name}
                             </a>
+                            </Link>
+                           
                         </li>
                     })}
 
