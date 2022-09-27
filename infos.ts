@@ -30,14 +30,14 @@ export const projects = [
   {
     name: 'To Webp - Saas',
     description: 'Convert Any picture to webp',
-    imageSrc: '/towebp.png',
+    imageSrc: '/images/towebp.png',
     imageAlt: 'saas project -to webp',
     href: '#',
   },
   {
     name: 'wishes - dashboard - systeme management',
     description: 'dashboard for management android app that contains images, stickers, quotes',
-    imageSrc: '/wishes.png',
+    imageSrc: '/images/wishes.png',
     imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
     href: '#',
   },
