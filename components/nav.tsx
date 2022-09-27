@@ -16,15 +16,16 @@ export default function Nav() {
           <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
             <div className="flex w-full items-center justify-between md:w-auto">
               <Link href={'/'}>
-                <a>
+                <div>
                   <span className="sr-only">AgaSof</span>
                   <img
                     alt="Agency"
                     className="h-8 w-auto sm:h-10"
                     src="/favicon.ico"
-
                   />
-                </a>
+                </div>
+
+
               </Link>
 
               <div className="-mr-2 flex items-center md:hidden">
@@ -38,10 +39,7 @@ export default function Nav() {
           <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href} className="font-medium text-gray-500 hover:text-gray-900 ">
-                <a>
-                  {item.name}
-                </a>
-
+                {item.name}
               </Link>
             ))}
 
@@ -90,9 +88,10 @@ export default function Nav() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
                 >
-                  {item.name}
+                  <a className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900">
+                    {item.name}
+                  </a>
                 </Link>
               ))}
             </div>
