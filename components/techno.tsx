@@ -39,8 +39,14 @@ const technos = [
 
     },
     {
-        name: "Blogger",
+        name: "Woocommerce",
         icon: "https://img.icons8.com/color/344/blogger.png",
+        color: ""
+
+    },
+    {
+        name: "Blogger",
+        icon: "https://img.icons8.com/external-those-icons-flat-those-icons/344/external-Woocommerce-Logo-social-media-those-icons-flat-those-icons.png",
         color: ""
 
     },

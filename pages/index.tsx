@@ -9,6 +9,7 @@ import Banner from '../components/banner'
 import SEO from '../components/SEO'
 
 
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -18,10 +19,6 @@ const Home: NextPage = () => {
       <Techno />
       <Team />
       <Banner />
-
-
-
-
     </div>
   )
 }

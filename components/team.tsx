@@ -3,7 +3,7 @@ import Image from "next/image"
 const teams = [
     {
         name: "Abdellah khalid",
-        label: "Software Developer",
+        label: "Full Stack Developer",
         img: "https://avatars.githubusercontent.com/u/37934938?u=63f2e7c27905f77aed4ec78e6742381a196070ef&v=4",
         linkding: "",
         github: "",

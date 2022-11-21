@@ -1,6 +1,7 @@
 import { projects } from '../infos'
 import Image from 'next/image'
 import Link from 'next/link'
+import Banner from '../components/banner'
 
 export default function Example() {
     return (
@@ -20,8 +21,8 @@ export default function Example() {
                                     />
                                 </div>
                                 <h3 className="mt-6 text-sm text-gray-500">
-                                    <Link href={callout.href}>
-                                        <a>
+                                    <Link href={callout.href} >
+                                        <a target='_blank'>
                                           <span className="absolute inset-0" />
                                         {callout.name}  
                                         </a>
@@ -34,6 +35,7 @@ export default function Example() {
                     </div>
                 </div>
             </div>
+            <Banner />
         </div>
     )
 }

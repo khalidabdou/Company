@@ -23,9 +23,9 @@ export default function Header() {
                                 <span className="block text-indigo-600 xl:inline">online business</span>
                             </h1>
                             <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                                DevPro - Web agency
+                               { `
                                 Specialized in the development of innovative solutions adapted to your needs.
-                                In particular Android development, web appliction , working in exsiting projects.
+                                In particular Android development, web appliction , working in exsiting projects.`}
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <Link href="/contact">
