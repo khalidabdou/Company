@@ -46,7 +46,15 @@ export const projects = [
     description: 'Now you can manage your school, college, or any educational center with us',
     imageSrc: '/images/school.png',
     imageAlt: 'school management system',
-    href: '#',
+    href: 'https://school-manager.online/',
+  },
+  
+  {
+    name: 'Pet Shop',
+    description: 'PET CONFORT MAGASIN ET SOIN',
+    imageSrc: '/images/cat.png',
+    imageAlt: 'logo pet',
+    href: 'http://wordpress.specialones.online/',
   },
 
 ]
