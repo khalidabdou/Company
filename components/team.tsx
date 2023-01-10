@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const teams = [
     {
@@ -6,17 +7,10 @@ const teams = [
         label: "Full Stack Developer",
         img: "https://avatars.githubusercontent.com/u/37934938?u=63f2e7c27905f77aed4ec78e6742381a196070ef&v=4",
         linkding: "",
-        github: "",
+        github: "https://github.com/khalidabdou",
         facebook: ""
     },
-    {
-        name: "Nait Ougni Mohamed",
-        label: "Manager",
-        img:"/avatar.png",
-        linkding: "",
-        github: "",
-        facebook: ""
-    },
+   
     {
         name: "Oussma Ettamli",
         label: "Software Developer",
@@ -33,15 +27,7 @@ const teams = [
         github: "",
         facebook: ""
     },
-    ,
-    {
-        name: "Mohmed laarj",
-        label: "UI / UX Designer",
-        img: "/avatar.png",
-        linkding: "",
-        github: "",
-        facebook: ""
-    },
+    
 
 ]
 
@@ -63,12 +49,15 @@ export default function Team() {
             <div className="flex flex-wrap justify-center">
                 {teams.map((dev, e) => {
                     return <div key={e} className="text-center m-4">
-                        <img
+                        <Link href={dev!!.github}>
+                         <img
                             src={dev!!.img||"/avatar.png"}
                             className="rounded-full w-32 mb-4 mx-auto ring-2 ring-indigo-600 p-1"
                             alt="Avatar"
                             
                         />
+                        </Link>
+                       
                         <h5 className="text-xl font-medium leading-tight mb-2">{dev!!.name}</h5>
                         <p className="text-gray-500">{dev!!.label}</p>
                     </div>
