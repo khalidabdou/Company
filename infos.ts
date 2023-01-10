@@ -48,7 +48,7 @@ export const projects = [
     imageAlt: 'school management system',
     href: 'https://school-manager.online/',
   },
-  
+
   {
     name: 'Pet Shop',
     description: 'PET CONFORT MAGASIN ET SOIN',

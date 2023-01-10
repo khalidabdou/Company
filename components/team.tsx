@@ -10,7 +10,7 @@ const teams = [
         github: "https://github.com/khalidabdou",
         facebook: ""
     },
-   
+
     {
         name: "Oussma Ettamli",
         label: "Software Developer",
@@ -27,7 +27,7 @@ const teams = [
         github: "",
         facebook: ""
     },
-    
+
 
 ]
 
@@ -50,14 +50,14 @@ export default function Team() {
                 {teams.map((dev, e) => {
                     return <div key={e} className="text-center m-4">
                         <Link href={dev!!.github}>
-                         <img
-                            src={dev!!.img||"/avatar.png"}
-                            className="rounded-full w-32 mb-4 mx-auto ring-2 ring-indigo-600 p-1"
-                            alt="Avatar"
-                            
-                        />
+                            <img
+                                src={dev!!.img || "/avatar.png"}
+                                className="rounded-full w-32 mb-4 mx-auto ring-2 ring-indigo-600 p-1"
+                                alt="Avatar"
+
+                            />
                         </Link>
-                       
+
                         <h5 className="text-xl font-medium leading-tight mb-2">{dev!!.name}</h5>
                         <p className="text-gray-500">{dev!!.label}</p>
                     </div>
